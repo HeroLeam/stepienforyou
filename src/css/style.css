@@ -41,7 +41,7 @@ p {
     margin: auto;
 }
 
-.header {
+header {
     background: black;
     font-size: 18px;
     padding: 10px 0;
@@ -52,7 +52,7 @@ p {
     z-index: 1000;
 }
 
-.header a {
+header a {
     color: white;
     text-decoration: none;
     margin: 0 15px;
@@ -62,12 +62,6 @@ p {
 
 .hamburger-menu {
     display: none;
-    margin-left: 16px;
-    font-size: 1.5em;
-    background: none;
-    border: none;
-    color: var(--highlight);
-    cursor: pointer;
 }
 
 .iconCoin {
@@ -205,6 +199,13 @@ footer a:hover {
 @media (max-width: 600px) {
     .hamburger-menu {
         display: block;
+        margin-left: auto;
+        margin-right: 16px;
+        font-size: 1.5em;
+        background: none;
+        border: none;
+        color: var(--highlight);
+        cursor: pointer;
     }
 
     .menu {
@@ -212,7 +213,7 @@ footer a:hover {
         flex-direction: column;
         background-color: black;
         position: absolute;
-        top: 60px;
+        top: 56px;
         left: 0;
         width: 100%;
         padding: 10px;
