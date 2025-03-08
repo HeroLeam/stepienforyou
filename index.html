@@ -40,7 +40,7 @@
         <div id="profile" class="profile-section">
             <div class="profile-image-container">
                 <img src="./src/images/profile.png" alt="Profile Picture" class="profile-img">
-                <h1 class="profile-name">StepienForYou</h1>
+                <h2>StepienForYou</h2>
             </div>
             <div class="profile-text">
                 <p>Oi! Sou a Cami, tenho 29 anos, brasileira e casada há quase 10 anos. Meu marido é autista autodidata,
@@ -57,7 +57,9 @@
 
         <div id="tiktok" class="section">
             <h2>TikTok</h2>
-            <p>Comecei no TikTok em fevereiro de 2025 de forma mais séria, contratada pela agência Ohana. Foi um grande
+            <p>Comecei no TikTok em fevereiro de 2025 de forma mais séria, contratada pela agência <a class="destaque"
+                    href="https://www.tiktok.com/@ohana.producoes" target="_blank" rel="noopener noreferrer">Ohana</a>.
+                Foi um grande
                 crescimento profissional, principalmente nas lives, onde vivi experiências incríveis e conheci gente de
                 vários cantos, com histórias emocionantes e engraçadas.
                 Fazer lives foi um desafio para mim algo que a antiga Camila jamais imaginaria. Mas eu estava cansada e
@@ -95,7 +97,8 @@
                 para me apoiar e claro, se quiser contribuir com presentes na live ou de outras formas, ficarei
                 imensamente grata! 💛✨
             </p><br>
-            <p class="destaque">“Quero doar dinheiro para melhorar a perfomace da sua LIVE e incentivar a mante-las.”
+            <p class="destaque grifado">“Quero doar dinheiro para melhorar a perfomace da sua LIVE e incentivar a
+                mante-las.”
             </p>
             <p>Pode doar via PIX ou pelo Paypal abaixo.</p>
             <div class="buttons">
@@ -116,7 +119,7 @@
                 </div>
             </div>
             <br>
-            <p class="destaque">“Quero lhe presentear!”</p>
+            <p class="destaque grifado">“Quero lhe presentear!”</p>
             <p>Click no presente e irá direcionar para minha lista de presentes.</p>
             <div class="buttons">
                 <div class="buttonItem">
@@ -133,8 +136,8 @@
             <div class="socialIcons">
                 <a href="https://www.tiktok.com/@stepienforyou" target="_blank" rel="noopener noreferrer"><img
                         src="./src/images/tiktokIcon.svg" alt="Ícone TikTok"></a>
-                <a href="https://www.instagram.com/stepienforyou/profilecard" target="_blank" rel="noopener noreferrer"><img
-                        src="./src/images/instagramIcon.svg" alt="Ícone Instagram"></a>
+                <a href="https://www.instagram.com/stepienforyou/profilecard" target="_blank"
+                    rel="noopener noreferrer"><img src="./src/images/instagramIcon.svg" alt="Ícone Instagram"></a>
                 <a href="https://www.threads.net/@stepienforyou" target="_blank" rel="noopener noreferrer"><img
                         src="./src/images/threadsIcon.svg" alt="Ícone Threads"></a>
                 <a href="https://www.twitch.tv/stepienforyou" target="_blank" rel="noopener noreferrer"><img
@@ -161,7 +164,46 @@
         <a href="https://heroleam.github.io/portfolio" target="_blank" rel="noopener noreferrer">by HeroLeam</a>
     </footer>
 
+    <div class="background-doodle">
+        <css-doodle grid="5">
+            :doodle {
+            @grid: 10 / 100%;
+            }
+            background: @pick(
+            hsla(330, 100%, 50%, 0.25),
+            hsla(0, 0%, 100%, 0.25),
+            hsla(300, 100%, 50%, 0.25),
+            hsla(0, 100%, 70%, 0.25)
+            );
+
+            transform: translate(
+            @rand(-50vw, 50vw),
+            @rand(-50vh, 50vh)
+            );
+
+            @size: 5vmin;
+            @shape: heart;
+            @place-cell: 50% 50%;
+
+            animation-name: explosion;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+            animation-duration: calc(@rand(5s, 10s, .1));
+            animation-delay: calc(@rand(-5s, -1s, .1));
+            animation-timing-function: cubic-bezier(.84, .02, 1, 1);
+
+            @keyframes explosion {
+            0% { opacity: 0; }
+            70% { opacity: 1; }
+            100% { transform: translate(0, 0); }
+            }
+        </css-doodle>
+    </div>
+
     <script src="./src/js/script.js"></script>
+
+    <script src="https://unpkg.com/css-doodle@0.15.3/css-doodle.min.js"></script>
+
 </body>
 
 </html>

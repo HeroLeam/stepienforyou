@@ -1,6 +1,6 @@
 :root {
-    --default: #8C52FF;
-    --highlight: #FF25AB;
+    --default: #8c52ff;
+    --highlight: #ff25ab;
 }
 
 body {
@@ -17,17 +17,18 @@ h2 {
     margin: 10px 0px 15px;
     font-size: 2.5em;
     font-family: 'customFont', sans-serif;
-    text-shadow:
-        -1px -1px 0 #000,
-        1px -1px 0 #000,
-        -1px 1px 0 #000,
-        1px 1px 0 #000;
+    letter-spacing: 1px;
+    font-weight: 400;
+    padding: 3px 6px;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
 }
 
-p {
+p a {
     text-align: justify;
     display: flex;
     justify-content: center;
+    display: inline;
 }
 
 .buttonItem:hover p,
@@ -106,11 +107,6 @@ header a {
     color: var(--highlight);
     margin-top: 10px;
     text-align: center;
-    text-shadow:
-        -1px -1px 0 #000,
-        1px -1px 0 #000,
-        -1px 1px 0 #000,
-        1px 1px 0 #000;
 }
 
 .profile-text {
@@ -175,9 +171,12 @@ header a {
 .destaque {
     color: var(--highlight);
     text-align: center;
-    font-size: 1.3em;
     padding-bottom: 10px;
     font-weight: 500;
+}
+
+.grifado {
+    font-size: 1.3em;
 }
 
 .thanks {
@@ -210,6 +209,16 @@ footer a:hover {
     font-weight: 500;
     cursor: pointer;
 }
+
+.background-doodle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Mantém no fundo */
+}
+
 
 @media (max-width: 600px) {
     .hamburger-menu {
@@ -262,5 +271,19 @@ footer a:hover {
 
     .socialIcons img {
         animation: zoomInAndOut 1s ease-in-out infinite;
+    }
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
     }
 }
