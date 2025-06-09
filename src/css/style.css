@@ -1,6 +1,7 @@
 :root {
     --default: #8c52ff;
     --highlight: #ff25ab;
+    --emphasis: #ffd500;
 }
 
 body {
@@ -169,7 +170,7 @@ header a {
 }
 
 .destaque {
-    color: var(--highlight);
+    color: var(--emphasis);
     text-align: center;
     padding-bottom: 10px;
     font-weight: 500;
