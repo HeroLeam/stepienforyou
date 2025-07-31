@@ -1,0 +1,136 @@
+body {
+    margin-top: 1140px;
+    font-family: 'customFont', sans-serif;
+}
+
+.message-box {
+    margin: 0 auto;
+    position: relative;
+    padding: 20px 40px;
+    border-radius: 14px;
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: opacity .4s, transform .4s;
+    opacity: 0;
+    transform: translateY(12px);
+    overflow: visible;
+}
+
+.message-box.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.pop {
+    animation: pop 0.45s cubic-bezier(.25, .8, .5, 1);
+}
+
+@keyframes pop {
+    0% {
+        transform: translateY(12px) scale(.95);
+        opacity: 0;
+    }
+
+    60% {
+        transform: translateY(0) scale(1.04);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0) scale(1);
+    }
+}
+
+.icon {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* centraliza verticalmente */
+    flex: 1;
+}
+
+.text {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.1;
+    color: #fff;
+    word-break: break-word;
+}
+
+.sub {
+    margin-top: 6px;
+    font-size: .9rem;
+    font-weight: 400;
+    opacity: .85;
+    color: rgba(255, 255, 255, .9);
+}
+
+.sub:empty {
+    display: none;
+}
+
+/* cores por mensagem */
+.msg1 {
+    background: linear-gradient(135deg, #ff9ccf 0%, #ff6fa1 100%);
+}
+
+.msg2 {
+    background: linear-gradient(135deg, #00d4ff 0%, #1089c7 100%);
+}
+
+.msg3 {
+    background: linear-gradient(135deg, #5865F2 0%, #4752c4 100%);
+}
+
+.label {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: .55rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.progress-container {
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 0 4px;
+}
+
+.progress {
+    height: 100%;
+    width: 0%;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 4px;
+    transition: width linear;
+}
