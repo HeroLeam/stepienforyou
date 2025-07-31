@@ -90,29 +90,31 @@ body {
 
 /* cores por mensagem */
 .msg1 {
-    background: linear-gradient(135deg, #ff9ccf 0%, #ff6fa1 100%);
+    background: linear-gradient(135deg, #4286f4 0%, #ff6fa1 100%);
 }
 
 .msg2 {
-    background: linear-gradient(135deg, #00d4ff 0%, #1089c7 100%);
+    background: linear-gradient(135deg, #ff9ccf 0%, #ff6fa1 100%);
 }
 
 .msg3 {
+    background: linear-gradient(135deg, #00d4ff 0%, #1089c7 100%);
+}
+
+.msg4 {
     background: linear-gradient(135deg, #5865F2 0%, #4752c4 100%);
 }
 
-.label {
-    position: absolute;
-    top: 8px;
-    right: 12px;
-    background: rgba(255, 255, 255, 0.15);
-    padding: 4px 10px;
-    border-radius: 999px;
-    font-size: .55rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 600;
-    color: #fff;
+.msg5 {
+    background: linear-gradient(135deg, #ff4e50 0%, #f9d423 100%);
+}
+
+.msg6 {
+    background: linear-gradient(135deg, #1DB954 0%, #1A1A1A 100%);
+}
+
+.msg7 {
+    background: linear-gradient(135deg, #00d2a8 0%, #00a387 100%);
 }
 
 .progress-container {

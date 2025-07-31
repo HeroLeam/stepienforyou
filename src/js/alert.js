@@ -1,24 +1,45 @@
 const alerts = [
+    // {
+    //     text: "Hoje tem BATALHA às 19h! Não perca!",
+    //     class: "msg1",
+    //     img: "src/images/battle.png",
+    //     alt: "Battle"
+    // },
     {
         text: "Lembre-se de enviar HeartMe e resgatar seus pontos! Não perca!",
-        class: "msg1",
+        class: "msg2",
         img: "src/images/heartme.webp",
-        alt: "Heart Me",
-        tag: "1/3"
+        alt: "Heart Me"
     },
     {
         text: "Fale ao vivo! Use o LivePIX e mande seu recado! Link na Bio!",
-        class: "msg2",
+        class: "msg3",
         img: "src/images/livePixIcon.svg",
-        alt: "LivePIX",
-        tag: "2/3"
+        alt: "LivePIX"
     },
     {
-        text: "Junte-se ao nosso Discord e fique mais perto da live! Link na Bio!",
-        class: "msg3",
+        text: "Vem pro Discord e participe da comunidade! Link na Bio!",
+        class: "msg4",
         img: "src/images/discordIcon.svg",
-        alt: "Discord",
-        tag: "3/3"
+        alt: "Discord"
+    },
+    {
+        text: "Digite !pontos no chat para ver quantos pontos você tem na live",
+        class: "msg5",
+        img: "src/images/coinTikTok.svg",
+        alt: "Pontos"
+    },
+    {
+        text: "Use seus pontos da live e digite: !play Artista Música (ex: !play Coldplay Viva La Vida)",
+        class: "msg6",
+        img: "src/images/spotifyIcon.svg",
+        alt: "Música"
+    },
+    {
+        text: "Veja o ranking diário e mensal de taps da live no meu site! Link na Bio!",
+        class: "msg7",
+        img: "src/images/rankIcon.svg",
+        alt: "Rank"
     }
 ];
 
@@ -31,7 +52,6 @@ const pauseMs = pauseMinutes * 60 * 1000;
 const box = document.getElementById("message");
 const iconImg = document.getElementById("iconImg");
 const textEl = document.getElementById("text");
-const labelEl = document.getElementById("label");
 const subEl = document.getElementById("sub");
 const progressEl = document.getElementById("progress");
 
@@ -42,10 +62,9 @@ function showAlert(a) {
 
     iconImg.src = a.img;
     iconImg.alt = a.alt;
-    iconImg.style.display = ""; // caso tenha sido escondido por erro anterior
+    iconImg.style.display = "";
 
     textEl.textContent = a.text;
-    labelEl.textContent = a.tag;
     subEl.textContent = "";
 
     progressEl.style.transition = "none";
