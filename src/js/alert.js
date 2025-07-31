@@ -23,7 +23,7 @@ const alerts = [
 ];
 
 const displaySeconds = 7; // cada mensagem visível (teste)
-const pauseMinutes = 1; // pausa depois das 3 mensagens
+const pauseMinutes = 5; // pausa depois das 3 mensagens
 
 const displayMs = displaySeconds * 1000;
 const pauseMs = pauseMinutes * 60 * 1000;
