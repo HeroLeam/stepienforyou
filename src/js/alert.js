@@ -7,14 +7,14 @@ const alerts = [
         tag: "1/3"
     },
     {
-        text: "Fale ao vivo! Use o LivePIX e mande seu recado!",
+        text: "Fale ao vivo! Use o LivePIX e mande seu recado! Link na Bio!",
         class: "msg2",
         img: "src/images/livePixIcon.svg",
         alt: "LivePIX",
         tag: "2/3"
     },
     {
-        text: "Junte-se ao nosso Discord e fique mais perto da live!",
+        text: "Junte-se ao nosso Discord e fique mais perto da live! Link na Bio!",
         class: "msg3",
         img: "src/images/discordIcon.svg",
         alt: "Discord",
