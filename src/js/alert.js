@@ -1,6 +1,6 @@
 const alerts = [
     {
-        text: "Amanhã tem BATALHA às 19h! Não perca!",
+        text: "Amanhã (02/08) tem BATALHA às 19h! Não perca!",
         class: "msg1",
         img: "src/images/battle.png",
         alt: "Battle"
