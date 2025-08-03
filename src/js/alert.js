@@ -1,10 +1,10 @@
 const alerts = [
-    {
-        text: "Amanhã (02/08) tem BATALHA às 19h! Não perca!",
-        class: "msg1",
-        img: "src/images/battle.png",
-        alt: "Battle"
-    },
+    // {
+    //     text: "Amanhã (02/08) tem BATALHA às 19h! Não perca!",
+    //     class: "msg1",
+    //     img: "src/images/battle.png",
+    //     alt: "Battle"
+    // },
     {
         text: "Lembre-se de enviar HeartMe e resgatar seus pontos! Não perca!",
         class: "msg2",
